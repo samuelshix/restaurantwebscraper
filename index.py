@@ -1,7 +1,9 @@
+import cgitb
 import time
 import requests
 from bs4 import BeautifulSoup
 
+start_response('200 OK', [('Content-Type', 'text/html')])
 headers = {'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9'}
 
 # location=input("Enter a location: ") # add eventually: get input from javascript
