@@ -1,3 +1,31 @@
-h1 {
-    font-family: 'B612'
+body {
+    background-color: rgb(208, 231, 253)!important; 
+}
+body h1 {
+    margin: 1em;
+}
+h2 {
+    font-size: .8;
+}
+.container {
+    flex: 50%;
+    padding: 0 4px;
+    transition: .5s;
+    background-color: rgb(255, 234, 203);
+    border-radius: 1em;
+    margin: .5em;
+}
+.container:hover {
+    cursor: pointer;
+    background-color: rgb(250, 213, 145);
+    box-shadow: 1em black ;
+}
+.supercontainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.map {
+    margin-left: 25%;
 }

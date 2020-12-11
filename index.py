@@ -14,7 +14,7 @@ app = Flask(__name__)
 def yelp_restaurants():
     restaurant_list=[]
     item_start_number = 0
-    for i in range(1):
+    for i in range(10):
         URL = 'https://www.yelp.com/search?cflt=restaurants&find_loc=Indianapolis&start=' + str(item_start_number*10)
         page = requests.get(URL,headers=headers)
         soup = BeautifulSoup(page.content, 'html.parser')
